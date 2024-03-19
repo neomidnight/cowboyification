@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "cowboyification",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "./words.js",
+        "./replacer.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
